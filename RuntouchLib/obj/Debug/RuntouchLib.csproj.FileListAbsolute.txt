@@ -1,0 +1,5 @@
+C:\Users\Matt\Github\RuntouchLib\RuntouchLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Github\RuntouchLib\RuntouchLib\bin\Debug\RuntouchLib.dll
+C:\Users\Matt\Github\RuntouchLib\RuntouchLib\bin\Debug\RuntouchLib.pdb
+C:\Users\Matt\Github\RuntouchLib\RuntouchLib\obj\Debug\RuntouchLib.dll
+C:\Users\Matt\Github\RuntouchLib\RuntouchLib\obj\Debug\RuntouchLib.pdb

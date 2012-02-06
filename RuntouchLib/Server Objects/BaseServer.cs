@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net;
+using System.IO;
 
-namespace Runtouch
+namespace Runtouch.Server
 {
-    abstract class BaseServer
+    public abstract class BaseServer
     {
         private string rootDirectory;
 
@@ -18,7 +19,6 @@ namespace Runtouch
 
         public BaseServer(string rootDirectory)
         {
-            this.Address = address;
             this.RootDirectory = rootDirectory;
         }
 

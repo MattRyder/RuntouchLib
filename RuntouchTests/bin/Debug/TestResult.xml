@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Matt\Github\RuntouchLib\RuntouchTests\bin\Debug\RuntouchTests.exe" total="2" errors="1" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-02-06" time="22:52:18">
+  <environment nunit-version="2.5.10.11092" clr-version="4.0.30319.239" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Users\Matt\Github\RuntouchLib\RuntouchTests\bin\Debug" machine-name="MATT-PC" user="Matt" user-domain="Matt-PC" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Matt\Github\RuntouchLib\RuntouchTests\bin\Debug\RuntouchTests.exe" executed="True" result="Failure" success="False" time="33.493" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="RuntouchTests" executed="True" result="Failure" success="False" time="33.469" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="RuntouchTestFixture" executed="True" result="Failure" success="False" time="33.443" asserts="0">
+            <results>
+              <test-case name="RuntouchTests.RuntouchTestFixture.TestFault" executed="True" result="Failure" success="False" time="16.026" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at RuntouchTests.RuntouchTestFixture.TestFault() in C:\Users\Matt\Github\RuntouchLib\RuntouchTests\TestFixture.cs:line 30
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="RuntouchTests.RuntouchTestFixture.TestReportContent" executed="True" result="Error" success="False" time="17.380" asserts="0">
+                <failure>
+                  <message><![CDATA[System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                  <stack-trace><![CDATA[at Runtouch.ErrorReport..ctor(Exception appException) in C:\Users\Matt\Github\RuntouchLib\RuntouchLib\Reporting Objects\ErrorReport.cs:line 37
+at RuntouchTests.RuntouchTestFixture.TestReportContent() in C:\Users\Matt\Github\RuntouchLib\RuntouchTests\TestFixture.cs:line 21
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

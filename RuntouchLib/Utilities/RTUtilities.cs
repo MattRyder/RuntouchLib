@@ -33,8 +33,5 @@ namespace Runtouch.Utilities
                    date.Month.ToString() + "_" +
                    date.Year.ToString();
         }
-
-
-
     }
 }
