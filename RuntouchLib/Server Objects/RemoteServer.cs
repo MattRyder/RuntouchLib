@@ -34,7 +34,7 @@ namespace Runtouch.Server
         public RemoteServer(string ipAddress, string rootDirectory, NetworkCredential netCredential) 
             : base(rootDirectory)
         {
-            this.IPAddress = RTUtilities.hostToIP(Dns.GetHostEntry(ipAddress));
+            this.IPAddress = RTUtilities.hostToIP(ipAddress);
             this.Credentials = netCredential;
         }
 

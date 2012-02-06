@@ -12,9 +12,10 @@ namespace Runtouch.Utilities
         /// Gets an IPv4 Address from the AddressList of an IPHostEntry. Returns null if none found.
         /// </summary>
         /// <param name="host">IPHostEntry with valid AddressList</param>
-        public static IPAddress hostToIP(IPHostEntry host)
+        public static IPAddress hostToIP(string host)
         {
-            foreach (var address in host.AddressList)
+            IPHostEntry hostEntries = Dns.GetHostEntry(host);
+            foreach (var address in hostEntries.AddressList)
             {
                 if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
                     return address;
@@ -23,15 +24,12 @@ namespace Runtouch.Utilities
         }
 
         /// <summary>
-        /// Gets the current time in the form DD_MM_YYYY
+        /// Gets the current time in the form DD-MM-YYYY
         /// </summary>
         /// <returns>A string representing the current date</returns>
         public static string getPostDate()
         {
-            DateTime date = DateTime.Now;
-            return date.Day.ToString() + "_" +
-                   date.Month.ToString() + "_" +
-                   date.Year.ToString();
+             return DateTime.Now.ToString("dd-MM-yyyy");
         }
     }
 }
