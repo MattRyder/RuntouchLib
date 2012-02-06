@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RTLibMain.cs" />
+    <Compile Include="Server Objects\BaseServer.cs" />
+    <Compile Include="Reporting Objects\ErrorReport.cs" />
+    <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server Objects\LocalServer.cs" />
+    <Compile Include="Server Objects\RemoteServer.cs" />
+    <Compile Include="Utilities\RTUtilities.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
